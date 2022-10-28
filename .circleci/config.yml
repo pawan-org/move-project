@@ -16,7 +16,9 @@ jobs:
       - checkout
       - run:
           name: "Say hi"
-          command: "echo hi, World!"
+          command: |
+             "echo hi, World!"
+             echo "successfully moved"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
